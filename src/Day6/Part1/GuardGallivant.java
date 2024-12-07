@@ -54,10 +54,10 @@ class GuardGallivant {
                 guardX = nextX;
                 counter++;
             } else if (map[nextY][nextX] == '#') {
-                dirIndex = (dirIndex + 1) % directions.length; // Rotate right
+                dirIndex = (dirIndex + 1) % directions.length;
             } else if (map[nextY][nextX] == 'E') {
                 break;
-            } else { // ^ or X
+            } else {
                 guardY = nextY;
                 guardX = nextX;
             }
